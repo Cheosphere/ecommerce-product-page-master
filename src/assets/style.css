@@ -1,0 +1,112 @@
+/* VARIABLES */
+:root {
+    /* Primary */
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    /* Neutral */
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+#app {
+    width: 100%;
+    max-width: 1440px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Buttons Lightbox Styles */
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    min-width: 56px;
+    min-height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56px;
+    background-color: var(--white);
+}
+
+.swiper .swiper-button-prev {
+    top: 13rem;
+    left: -1.6rem;
+}
+
+.swiper .swiper-button-next {
+    top: 13rem;
+    right: -1.6rem;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--very-dark-blue);
+    transition: .2s;
+}
+
+.swiper .swiper-button-prev:hover.swiper-button-prev::after,
+.swiper .swiper-button-next:hover.swiper-button-next::after {
+    color: var(--orange);
+}
+
+/* Media Query */
+@media screen and (max-width: 940px) {
+    body {
+        align-items: flex-start;
+    }
+
+    #app {
+        height: auto;
+    }
+
+    .swiper .swiper-button-prev {
+        top: 15rem;
+    }
+    
+    .swiper .swiper-button-next {
+        top: 15rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        min-width: 46px;
+        min-height: 46px;
+    }
+    .swiper .swiper-button-prev {
+        top: 49%;
+        left: 1rem;
+    }
+    
+    .swiper .swiper-button-next {
+        top: 49%;
+        right: 1rem;
+    }
+}
