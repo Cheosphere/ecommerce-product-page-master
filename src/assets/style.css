@@ -26,6 +26,7 @@ body {
 }
 
 body {
+    height: min-content;
     display: flex;
     justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
@@ -34,7 +35,8 @@ body {
 #app {
     width: 100%;
     max-width: 1440px;
-    height: 900px;
+    height: auto;
+    padding-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

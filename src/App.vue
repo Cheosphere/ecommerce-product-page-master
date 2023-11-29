@@ -81,7 +81,7 @@ onBeforeUnmount(() => {
 .main-content {
   width: 100%;
   max-width: 1014px;
-  height: 787px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   transition: .2s;
