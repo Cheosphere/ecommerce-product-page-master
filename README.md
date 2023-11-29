@@ -6,6 +6,8 @@ El desafío es construir esta página de producto de comercio electrónico y hac
 - CSS
 - Vue JS - Composition API & Vite
 
+![desktop-preview](https://github.com/Cheosphere/ecommerce-product-page-master/assets/112582420/d6ac975a-ad66-42c4-a8c5-7690ac5b3736)
+
 # Guía de Estilo
 
 ## Diseño
